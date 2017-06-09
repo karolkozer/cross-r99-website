@@ -1,0 +1,759 @@
+/*-------------------------------------------
+** Font Color: #555
+** Color Orange: #d35900
+** Button Color #FF7800
+-------------------------------------------*/
+
+/*******************************************
+** BASIC
+*******************************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #fff;
+    color: #2b2b2b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.celarfix:after {
+    clear: both;
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+}
+
+/*******************************************
+** RESUMABLE COMPONENTS
+*******************************************/
+section {
+    padding: 80px 0;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.box {
+    padding: 1%;
+}
+
+/*---------- Heading ----------*/
+h1, h2, h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 260%;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 190%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 115%;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.main-text-box .text-color {
+    color: #d35900;
+}
+
+.text-color {
+    color: #ea6200;
+}
+
+/*---------- Paragraph ----------*/
+.long-copy {
+    line-height: 145%;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/*---------- Icon ----------*/
+.icon-big {
+    display: block;
+    font-size: 300%;
+    color: #ea6200;
+    margin-bottom: 15px;
+}
+
+.close-btn {
+    float: right;
+    margin-right: 15px;
+    padding: 5px 10px;
+    transition: all 0.2s;
+}
+
+.close-btn i {
+    font-size: 160%;
+    transition: all 0.2s;
+}
+
+.close-btn:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.close-btn:hover i {
+    color: #000;
+}
+
+/*---------- Button----------*/
+.btn:link,
+.btn:visited,
+.btn-sign-up {
+    display: inline-block;
+    padding: 18px 40px;
+    color: #e3e3e3;
+    text-transform: uppercase;
+    font-size: 90%;
+    text-decoration: none;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    background-color: rgba(255, 108, 0, 0.7);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+.btn-sign-up {
+    margin-right: 18px;
+    border: 1px solid rgba(255, 108, 0, 0.4);
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    background-color: transparent;
+    border: 1px solid rgba(255, 120, 0, 0.8);
+    color: rgba(255, 120, 0, 0.8);
+}
+
+.btn-full:hover,
+.btn-full:active,
+.btn-sign-up:hover {
+    background-color: #d35900;
+    border: 1px solid #d35900;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: #d35900;
+    border: 1px solid #d35900;
+    color: #e3e3e3;
+}
+
+/*******************************************
+** MODAL
+*******************************************/
+.modal-screen {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99999;
+    display: none;
+}
+
+.modal-container {
+    background-image: url(img/background-modal-min.png);
+    background-size: cover;
+    background-position: center;
+    margin: 95px auto;
+    border: 2px solid #ba4e00;
+}
+
+.modal-content {
+    color: #fff;
+}
+
+.modal-content h1{
+    padding: 15px;
+    font-size: 220%;
+}
+
+.modal-content p {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: 120%
+}
+
+.how-it-works {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.how-it-works li {
+    margin-bottom: 10px;
+    font-size: 90%
+}
+
+.iphone-screen {
+    width: 45%;
+    height: auto;
+    margin-left: 90px;
+}
+
+.btn-app img{
+    height: 45px;
+    margin: 20px 10px 0 5px;
+}
+
+/*******************************************
+** HEADER
+*******************************************/
+header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background-white-min.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.main-text-box {
+    width: 1140px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/*---------- Logo ----------*/
+.logo {
+    margin-top: 40px
+}
+
+.logo-black {
+    float: left;
+    display: none;
+    margin-top: 20px
+}
+
+/*---------- Main Navigation ----------*/
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    font-size: 90%;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    letter-spacing: 1px;
+    padding: 8px 0;
+    color: #fff;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.main-nav li a:link::after,
+.main-nav li a:visited::after {
+    content: "";
+    display: block;
+    padding-top: 8px;
+    border-bottom: 2px solid #d35900;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.main-nav li a:hover::after,
+.main-nav li a:active::after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+/* Mobile Icon Hamburger */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+/*---------- Sticky Navigation ----------*/
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 2px #f0f0f0;
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin-top: 25px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 15px 0;
+    color: #2b2b2b;
+}
+
+.sticky .main-nav li a:link::after,
+.sticky .main-nav li a:visited::after {
+    content: "";
+    display: block;
+    padding-top: 15px;
+}
+
+.sticky .logo-black {
+    display: block;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+
+/*******************************************
+** SECTION FITENSS
+*******************************************/
+.section-fitness .long-copy {
+    margin-bottom: 50px;
+}
+
+
+/*******************************************
+** SECTION MOTIVATION
+*******************************************/
+.section-motivation {
+    background-color: #ea6200;
+    color: #fff;
+}
+
+.section-motivation h2 {
+    margin-bottom: 0px;   
+}
+
+.section-motivation .text-color,
+.motivation-2 {
+    color: #1a1a1a;
+}
+
+.motivation-2 {
+    background-color: #fff;
+}
+
+.motivation-2 .text-color {
+    color: #ea6200;
+}
+
+
+/*******************************************
+** SECTION GALLERY
+*******************************************/
+.section-gallery {
+    padding: 0;
+}
+
+.gym-gallery {
+    width: 100%;
+    list-style: none;
+}
+
+.gym-gallery li {
+    width: 33.33%;
+    display: block;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.gym-gallery li:hover
+.photo img {
+    opacity: 0.2;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.gym-gallery li:hover 
+.photo-description {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.gym-gallery li:hover 
+.photo-description p:after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 0.6;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.photo-description {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.photo-description p {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+.photo-description p:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #d35900;
+    margin: 0 auto;
+    margin-top: 10px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition: -webkit-transform 0.3s 0.4s ease-in-out;
+    transition: -webkit-transform 0.3s 0.4s ease-in-out;
+    transition: transform 0.3s 0.4s ease-in-out;
+    transition: transform 0.3s 0.4s ease-in-out, -webkit-transform 0.3s 0.4s ease-in-out;
+}
+
+/*******************************************
+** SECTION WORKOUT SESSIONS
+*******************************************/
+.section-sessions {
+    background-color: #ea6200;
+    background-size: cover;
+    background-position: center;
+    color: #1a1a1a;
+}
+
+.section-sessions .text-color {
+    color: #fff;
+}
+
+.session-box {
+    width: 60%;
+    margin: 0 20%;
+    padding-top: 15px;
+}
+
+.plan-session {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 150%;
+    padding: 10px;
+    margin-bottom: 15px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.plan-session:nth-child(3n - 1) {
+    display: block;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.plan-session:hover {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.plan-session div,
+.session-class {
+    display: inline-block;
+}
+
+.plan-session div {
+    float: left;
+    margin-right: 50px;
+}
+
+.session-class {
+    display: inline-block;
+}
+
+.hour {
+    float: right;
+}
+
+/*******************************************
+** SECTION PRICE
+*******************************************/
+.section-price {
+    background-image:-webkit-linear-gradient(rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86)), url(img/vinicius-amano-145608-min.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+.section-price .text-color {
+    color: #d35900;
+}
+
+.big-text {
+    font-size: 150%;
+}
+
+.section-price .btn {
+    margin: 20px auto;
+}
+
+/*******************************************
+** SECTION CONTACT
+*******************************************/
+.section-contact {
+    background-image:-webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/contact-background-min.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.section-contact 
+.long-copy {
+    width: 55%;
+    margin: 0 auto;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.info-box {
+    width: 27%;
+    margin: 0 auto;
+}
+
+.info-box span {
+    text-transform: uppercase;
+}
+
+.info {
+    margin-bottom: 18px;
+}
+
+/*******************************************
+** SECTION FOOTER
+*******************************************/
+footer {
+    background-color: #111111;
+    padding: 45px;
+    font-size: 80%;
+}
+
+.footer-nav, .social-links {
+    list-style: none;
+}
+
+.footer-nav {
+    float: left;
+}
+
+.social-links {
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    margin-right: 13px;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+}
+
+.footer li:lst-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #b4b4b4;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links {
+    font-size: 160%;
+}
+
+.fb, .tw,
+.insta, .google {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.fb:hover {
+    color: #3b5998;
+}
+
+.tw:hover {
+    color: #55acee;
+}
+
+.insta:hover {
+    color: #125688;
+}
+
+.google:hover {
+    color: #dd4b39;
+}
+
+footer p {
+    color: #b4b4b4;
+    text-align: center;
+    margin-top: 70px;
+}
+
+/*******************************************
+** ANIAMTIONS
+*******************************************/
+.js--wp-1, .js--wp-2,
+.js--wp-3, .js--wp-4,
+.js--wp-5, .js--wp-6, 
+.js--wp-7 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.delay-05s {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.delay-15s {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.delay-2s {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.delay-25s {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+
+.js--wp-1.animated, .js--wp-2.animated,
+.js--wp-3.animated, .js--wp-4.animated,  
+.js--wp-5.animated, .js--wp-6.animated     
+.js--wp-7.animated {    
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+

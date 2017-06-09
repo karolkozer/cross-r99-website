@@ -1,0 +1,519 @@
+/* Small Screens to 1224px (width smaller than the 1140px row)*/
+@media only screen and (max-width: 1224px) {
+    
+    .row {
+        padding: 0 3%;
+    }
+    
+    /*********** HEADER ***********/
+    .main-text-box {
+        width: 100%;
+        padding: 0 3%;
+    }
+    
+    /*********** MODAL SCREEN ***********/
+    .modal-container {
+        margin: 105px auto;
+        width: 80%;
+        height: 70%;
+    }
+    
+    .modal-content h1{
+        padding: 10px;
+        font-size: 160%;
+    }
+
+    .modal-content p {
+        margin-left: 15px;
+        margin-bottom: 10px;
+        font-size: 120%
+    }
+
+    .how-it-works {
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+
+    .how-it-works li {
+        margin-bottom: 10px;
+        font-size: 90%
+    }
+
+    .iphone-screen {
+        width: 55%;
+        height: auto;
+        margin-left: 90px;
+        margin-top: 60px
+    }
+
+    .btn-app img{
+        height: 45px;
+        margin: 20px 10px 0 5px;
+    }
+}
+
+/*Small to big tablets: from 768px to 1023px*/
+@media only screen and (max-width: 1023px) {
+    
+    body {
+        font-size: 18px;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    h2 {
+        font-size: 180%;
+    }
+    
+    /*---------- Logo ----------*/
+    .logo, .logo-black {
+        width: 18%;
+    }
+    
+    /*---------- Paragraph ----------*/
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    /*********** SECTION GALLERY ***********/
+    .photo-description p {
+        font-size: 100%;
+        margin-bottom: 8px;
+    }
+    
+    .photo-description p:after {
+        margin-top: 8px;
+    }
+    
+    /*********** MODAL SCREEN ***********/
+    .modal-container {
+        margin: 95px auto;
+        width: 90%;
+        height: 70%;
+    }
+
+    .modal-content h1{
+        padding: 3px;
+        font-size: 150%;
+    }
+    
+    .modal-content .big-text {
+        font-size: 160%;
+    }
+
+    .modal-content p {
+        margin-left: 15px;
+        margin-bottom: 10px;
+        font-size: 100%
+    }
+    
+    .iphone-screen {
+        width: 55%;
+        margin-left: 80px;
+        margin-top: 30px;
+    }
+
+    .btn-app img{
+        height: 45px;
+        margin: 20px 10px 0 5px;
+    }
+    
+}
+
+/*Small phones to small tablets: from 481px to 767px*/
+@media only screen and (max-width: 767px) {
+    
+    body {
+        font-size: 16px;
+    }
+    
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    
+    h1 {
+        font-size: 220%;
+    }
+    
+    h2 {
+        font-size: 150%;
+    }
+    
+    section {
+        padding: 30px 0;
+    }
+    
+    .row {
+        padding: 0 4%;
+    }
+    
+    /*---------- Mobile Navigation ----------*/
+    .logo {
+        float: left;
+    }
+    
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+    
+    .main-nav {
+        display: none;
+        float: left;
+        margin-top: 35px;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        border: 0;
+        display: block;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    
+    /*---------- Sticky Navigation ----------*/
+    .sticky .main-nav {
+        margin-top: 18px;
+    }
+    
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0;
+    }
+
+    .sticky .main-nav li a:link::after,
+    .sticky .main-nav li a:visited::after {
+        padding-top: 10px;
+    }
+
+    .sticky .logo-black {
+        display: block;
+    }
+
+    .sticky .logo {
+        display: none;
+    }
+    
+    .sticky .mobile-nav-icon {
+        margin-top: 10px;
+    }
+    
+    .sticky .mobile-nav-icon i {
+        color: #000;
+    }
+    
+    /*********** HEADER ***********/
+    .main-text-box {
+        padding: 0 4%;
+    }
+    
+    /*---------- Paragraph ----------*/
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+        
+    /***********  SECTION GALLERY ***********/
+    .gym-gallery li {
+        width: 100%;
+    }
+    
+    .photo-description p {
+        font-size: 180%;
+        margin-bottom: 12px;
+    }
+    
+    .photo-description p:after {
+        margin-top: 12px;
+    }
+    
+    /*********** SECTION WORKOUT SESSIONS ***********/
+
+    .session-box {
+        width: 100%;
+        margin: 0% 0%;
+    }
+
+    .plan-session {
+        color: #FFF;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 150%;
+        padding: 10px;
+        margin-bottom: 15px;
+        transform: scale(1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .plan-session:nth-child(3n - 1) {
+        transform: scale(1.05);
+    }
+
+    .plan-session:hover {
+        transform: scale(1.05);
+    }
+
+    .plan-session div,
+    .session-class {
+        display: inline-block;
+    }
+
+    /*********** SECTION CONTACT ***********/
+    .section-contact 
+    .long-copy {
+        width: 90%;
+        margin: 0 5%;
+        margin-bottom: 50px;
+    }
+    
+    .info-box {
+        width: 55%;
+    }
+    
+    /*********** SECTION FOOTER ***********/
+    .social-links {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        float: left;
+    }
+    
+    /*********** MODAL SCREEN ***********/
+    .modal-screen .col {
+        width: 50%;
+    }
+    
+    .modal-container {
+        margin: 95px auto;
+        height: 60%;
+    }
+
+    .modal-content h1{
+        padding: 2px;
+        font-size: 130%;
+        margin-bottom: 10px;
+    }
+    
+    .modal-content .big-text {
+        font-size: 100%;
+    }
+
+    .modal-content p {
+        margin-left: 0px;
+        margin-bottom: 10px;
+        font-size: 90%
+    }
+    
+    .how-it-works {
+        margin-left: 12px;
+    }
+    
+    .iphone-screen {
+        width: 75%;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .btn-app img{
+        height: 35px;
+        margin: 5px 0px 0 5px;
+    }
+    
+    .close-btn {
+        margin-right: -5px;
+        padding: 5px 5px;
+    }
+
+}
+
+/*Small phones: from 0 to 480px*/
+@media only screen and (max-width: 480px) {
+    
+    body {
+        font-size: 14px;
+    }
+    
+    section {
+        padding: 25px 0;
+    }
+    
+    h1 {
+        font-size: 160%;
+    }
+    
+    h2 {
+        font-size: 150%;
+    }
+    
+    /*---------- Button----------*/
+    .btn:link,
+    .btn:visited,
+    .btn-sign-up {
+        display: block;
+    }
+    
+    .btn-full:link,
+    .btn-full:visited,
+    .btn-sign-up {
+        margin-right: 0px;
+        margin-bottom: 25px;
+        background-color: #d35900;
+        border: 1px solid #d35900;
+    }
+
+    /*********** SECTION WORKOUT SESSIONS ***********/
+    .plan-session div {
+        margin-right: 20px;
+    }
+    
+    .plan-session:nth-child(3n - 1) {
+        transform: scale(1.02);
+    }
+
+    .plan-session:hover {
+        transform: scale(1.02);
+    }
+    
+    /*********** SECTION CONTACT ***********/
+    .section-contact 
+    .long-copy {
+        width: 90%;
+        margin: 0 5%;
+        margin-bottom: 50px;
+    }
+    
+    .info-box {
+        width: 64%;
+    }
+    
+    /*********** SECTION FOOTER ***********/
+    
+    .footer-nav li,
+    .social-links li {
+        margin-right: 10px;
+    }
+    
+    .social-links {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        float: left;
+    }
+    
+    /*********** MODAL SCREEN ***********/
+    .modal-screen .col {
+        width: 50%;
+    }
+    
+    .modal-container {
+        margin: 95px auto;
+        height: 60%;
+    }
+
+    .modal-content h1{
+        padding: 5px;
+        font-size: 130%;
+        margin-bottom: 10px;
+    }
+    
+    .modal-content .big-text {
+        font-size: 100%;
+    }
+
+    .modal-content p {
+        margin-left: 0px;
+        margin-bottom: 10px;
+        font-size: 90%
+    }
+    
+    .how-it-works {
+        margin-left: 12px;
+    }
+    
+    .iphone-screen {
+        width: 75%;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .btn-app img{
+        height: 25px;
+        margin: 5px 0px 0 5px;
+    }
+    
+    .close-btn {
+        margin-right: -5px;
+        padding: 5px 5px;
+    }
+
+}
+
+
+/* iPhone 6 in Landscape */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+
+    /*********** MODAL SCREEN ***********/
+    .modal-screen .col {
+        width: 50%;
+    }
+    
+    .modal-container {
+        margin: 15px auto;
+        height: 90%;
+    }
+
+    .iphone-screen {
+        width: 55%;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+}
+
+/* iPhone 6 Plus in Landscape */
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) { 
+    
+    /*********** MODAL SCREEN ***********/
+    .modal-container {
+        margin: 13px auto;
+        height: 90%;
+    }
+}
+
+/* Smasun Galaxy Plus in Landscape */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 640px) 
+and (orientation : landscape) {
+       
+    /*********** MODAL SCREEN ***********/
+    .modal-container {
+        margin: 13px auto;
+        height: 90%;
+    }
+    
+    .iphone-screen {
+        width: 55%;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+
